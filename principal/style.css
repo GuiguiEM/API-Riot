@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #191919;
+    overflow: hidden;
+}
+
+.centro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35px;
+}
+
+.retangulo{
+    width: 95vw;
+    height: 93vh;
+    background-color: #111111;
+    border-radius: 50px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 35px;
+    gap: 75px;
+  }
+
+.logo{
+    margin-left: 65px;
+    width: 10vw;
+}
+
+.titulo{
+    color: #f6f6f6;
+    font-size: 0.8vw;
+}
+
+.titulo>h2{
+    color: rgb(64, 65, 65);
+}
+
+#busca{
+    display: flex;
+    background-color:#191919;
+    border:none;
+    border-radius:15px;
+    width: 28vw;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10vh;
+  }
+  
+  #txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:24px;
+    border:none;
+    height:50px;
+    width:28vw;
+    color: #f6f6f6;
+    border-radius: 15px;
+  }
+
+  #btnBusca{
+    background-color: transparent;
+    background-image: url(/img/lupa.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25%;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 25vw;
+    position: absolute;
+  }
+
+  #btnBusca:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .player{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px;
+}
+.player img{
+    max-width: 300px;
+    max-height: 300px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.player img:hover{
+    box-shadow: 0px 0px 8px black;
+    transform: scale(1.05);
+}
